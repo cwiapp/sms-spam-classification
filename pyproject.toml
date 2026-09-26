@@ -1,6 +1,6 @@
 [project]
 name = "sms-spam-course-project"
-version = "0.2.0"
+version = "0.1.0"
 description = "Reproducible phase-2 SMS spam data and baseline project"
 requires-python = ">=3.10"
 dependencies = []
