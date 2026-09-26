@@ -1,0 +1,587 @@
+{
+  "source_rows": 5574,
+  "label_counts": {
+    "ham": 4827,
+    "spam": 747
+  },
+  "label_fraction_spam": 0.1340150699677072,
+  "unique_normalized_texts": 5159,
+  "duplicate_rows": 415,
+  "conflicting_label_groups": 0,
+  "missing_text_or_label": 0,
+  "length_characters": {
+    "ham": {
+      "median": 52,
+      "p90": 147,
+      "max": 910
+    },
+    "spam": {
+      "median": 149,
+      "p90": 160,
+      "max": 223
+    }
+  },
+  "url_count": {
+    "ham": 2,
+    "spam": 106
+  },
+  "han_character_rows": 1,
+  "splits": {
+    "train": {
+      "rows": 3880,
+      "ham": 3363,
+      "spam": 517,
+      "unique_groups": 3611
+    },
+    "validation": {
+      "rows": 831,
+      "ham": 716,
+      "spam": 115,
+      "unique_groups": 774
+    },
+    "test": {
+      "rows": 863,
+      "ham": 748,
+      "spam": 115,
+      "unique_groups": 774
+    }
+  },
+  "source": {
+    "url": "https://archive.ics.uci.edu/static/public/228/sms%2Bspam%2Bcollection.zip",
+    "sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+    "dataset_page": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
+    "license": "CC BY 4.0"
+  },
+  "split_policy": {
+    "seed": 42,
+    "ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "method": "stratify by label at normalized-text group level"
+  },
+  "baseline_validation": {
+    "evaluated_split": "validation",
+    "threshold": 3,
+    "total": 831,
+    "covered": 830,
+    "coverage": 0.9987966305655837,
+    "abstentions": {
+      "ham": 1
+    },
+    "confusion": {
+      "tp": 26,
+      "fn": 89,
+      "fp": 0,
+      "tn": 715
+    },
+    "spam_recall": 0.22608695652173913,
+    "spam_recall_95pct_wilson": [
+      0.15921636720888693,
+      0.3106656030633454
+    ],
+    "ham_false_positive_rate": 0.0,
+    "ham_fpr_95pct_wilson": [
+      0.0,
+      0.00534395835626438
+    ],
+    "spam_precision": 1.0,
+    "accuracy_on_covered": 0.8927710843373494
+  },
+  "validation_error_ids": [
+    {
+      "row_id": 518,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 530,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 584,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 599,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 612,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 674,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 714,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 753,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 816,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 825,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 832,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 881,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1018,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1074,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1138,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1155,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1222,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1228,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1253,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1329,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1381,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1450,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1459,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1467,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1493,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1595,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1639,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1641,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1742,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1782,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 1941,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2072,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2116,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2147,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2270,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2387,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2421,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2497,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2643,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2700,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2831,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2880,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2903,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2946,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 2960,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3177,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3299,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3335,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3443,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3549,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3563,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3572,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3596,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3751,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3764,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3767,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3790,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3802,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3914,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3964,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 3999,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4000,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4109,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4135,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4199,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4200,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4207,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4214,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4250,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4360,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4374,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4377,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4387,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4395,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4437,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4572,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4674,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4753,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4822,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 4865,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 5113,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 5140,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 5192,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 5203,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 5204,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 5504,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 5540,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 5550,
+      "true": "spam",
+      "predicted": "ham"
+    },
+    {
+      "row_id": 5569,
+      "true": "spam",
+      "predicted": "ham"
+    }
+  ],
+  "baseline_validation_unique_text": {
+    "evaluated_split": "validation",
+    "threshold": 3,
+    "total": 774,
+    "covered": 773,
+    "coverage": 0.9987080103359173,
+    "abstentions": {
+      "ham": 1
+    },
+    "confusion": {
+      "tp": 17,
+      "fn": 79,
+      "fp": 0,
+      "tn": 677
+    },
+    "spam_recall": 0.17708333333333334,
+    "spam_recall_95pct_wilson": [
+      0.11360507865666794,
+      0.265410405168081
+    ],
+    "ham_false_positive_rate": 0.0,
+    "ham_fpr_95pct_wilson": [
+      0.0,
+      0.005642222239738501
+    ],
+    "spam_precision": 1.0,
+    "accuracy_on_covered": 0.8978007761966365
+  },
+  "validation_diagnostics": {
+    "score_histogram_by_true_label": {
+      "ham": {
+        "0": 694,
+        "1": 14,
+        "2": 7
+      },
+      "spam": {
+        "3": 16,
+        "4": 5,
+        "5": 5,
+        "0": 50,
+        "1": 24,
+        "2": 15
+      }
+    },
+    "false_negatives_with_explicit_url": 11,
+    "false_negatives_with_digit": 86,
+    "all_ham_reference_accuracy": 0.8616125150421179
+  }
+}

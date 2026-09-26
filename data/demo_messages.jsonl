@@ -1,0 +1,4 @@
+{"text":"You won a prize. Claim it now!","expected":"spam","source":"author-written synthetic example"}
+{"text":"URGENT CASH offer. Call now!","expected":"spam","source":"author-written synthetic example"}
+{"text":"Can we meet at the library at 3 pm?","expected":"ham","source":"author-written synthetic example"}
+{"text":"Are you free for lunch tomorrow?","expected":"ham","source":"author-written synthetic example"}
